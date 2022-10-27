@@ -4,8 +4,8 @@
 - CSS
 - HTML
 - Javascript
-## Live Demo (if available)
-[Live Demo Link](https://ambient567.github.io/Capstone_Project/)
+## Live Demo 
+[Live Demo Link](https://www.loom.com/share/b20aec5d094f453d837772b4b836aff3)
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 ### Prerequisites
