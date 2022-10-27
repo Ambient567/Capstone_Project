@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -17,8 +17,6 @@
   text-align: right;
   line-height: 36px;
   vertical-align: middle;
-
-
 }
 
 .top_menu ul {
@@ -33,7 +31,6 @@
   display: inline-block;
   margin: 0px 20px 0px 0px;
   padding: 0px;
-  
 }
 
 .top_menu ul li a {
@@ -172,8 +169,7 @@ a {
 }
 
 .card-container {
-  margin:  5%;
- 
+  margin: 5%;
 }
 
 .card {
@@ -191,7 +187,7 @@ a {
   width: 60px;
 }
 
-.card-title{
+.card-title {
   margin-top: 20px;
   color: rgb(239, 81, 60);
   font-size: 1.5em;
@@ -199,14 +195,14 @@ a {
   font-family: "Nanum Gothic", sans-serif;
 }
 
-.card-text{
+.card-text {
   margin-top: 20px;
   font-size: 1em;
   word-break: keep-all;
   font-family: "Nanum Gothic", sans-serif;
 }
 
-.show_all_program{
+.show_all_program {
   clear: left;
   text-align: right;
   margin-top: 35%;
@@ -219,6 +215,84 @@ a {
   font-size: 1.125em;
   text-decoration: none;
   color: #fff;
+}
+
+.speaker-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0 5%;
+  padding-right: 0 5%;
+  align-items: center;
+}
+
+.speaker-card {
+  gap: 5%;
+  width: 48vw;
+  margin: 2% 2% 2% 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+.speaker-card img {
+  height: 25vh;
+  width: 16vw;
+  padding: 2% 2% 2% 2%;
+}
+
+h3.speaker-card div {
+  font-size: 24px;
+  display: flow-root;
+  margin: 10px;
+  align-self: center;
+}
+
+.speaker-card div h5 {
+  color: rgb(250, 46, 46);
+  font-size: 14px;
+  margin: 10px 10px;
+}
+
+.speaker-card div p {
+  font-size: 16px;
+  margin: 10px 10px;
+}
+
+.top-speakers {
+  margin-top: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.partners {
+  width: 100%;
+  margin-right: 20%;
+  padding: 20px 20px;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  margin-top: 5%;
+}
+
+.partners-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.logo-pt {
+  margin: 1.5em;
+  height: 20vh;
+  width: 30vw;
+  padding: 2% 2% 2% 2%;
+}
+
+.footer {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
 }
 /* --------------- media query--------------------------- */
 
@@ -306,7 +380,7 @@ a {
     vertical-align: middle;
   }
 
-  .icon img{
+  .icon img {
     width: 40px;
     vertical-align: middle;
   }
@@ -316,21 +390,38 @@ a {
     vertical-align: middle;
   }
 
-  .card-text{
+  .card-text {
     font-size: 0.8em;
     text-align: left;
   }
 
-  .show_all_program{
+  .show_all_program {
     margin-top: 40%;
     font-size: 1em;
     font-family: "Nanum Gothic", sans-serif;
   }
-  
-  .web{
+
+  .web {
     margin-top: 40%;
     font-size: 1em;
     font-family: "Nanum Gothic", sans-serif;
   }
-  
+
+  .speaker-card {
+    width: 95vw;
+  }
+
+  .speaker-card img {
+    height: 25vh;
+    width: 40vw;
+  }
+
+  .partners{
+    margin-top: 25%;
+  }
+
+  .logo-pt {
+    height: 15vh;
+    width: 50vw;
+  }
 }
