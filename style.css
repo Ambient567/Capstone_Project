@@ -192,9 +192,9 @@ a {
 }
 
 .card {
-  margin: 0px 0px 0px 3px;
-  padding: 0px;
-  border: 0px;
+  margin: 0 0 0 3px;
+  padding: 0;
+  border: 0;
   float: left;
   width: calc(20% - 3px);
   height: 300px;
