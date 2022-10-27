@@ -5,7 +5,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  overflow-x: hidden;
 }
 
 .topmenu_wrap {
@@ -43,6 +42,7 @@ a {
   margin: 0 20px 0 0;
   padding: 0;
 }
+
 .show_all_program a {
   font-size: 1.125em;
   text-decoration: none;
@@ -307,17 +307,22 @@ h3.speaker-card div {
   width: 100%;
   justify-content: center;
   text-align: center;
-  /* margin-top: 5%; */
   height: 200px;
   color: white;
   font-size: 1.5em;
 }
+
 .register {
   display: none;
 }
+
 /* --------------- media query--------------------------- */
 
 @media (max-width: 768px) {
+  *{
+    overflow-x: hidden;
+  }
+
   .topmenu_wrap {
     display: none;
   }
@@ -357,8 +362,6 @@ h3.speaker-card div {
     font-size: xx-large;
     font-weight: 400;
     flex-direction: column;
-
-    /* background: #fff; */
     justify-content: flex-start;
     backdrop-filter: blur(10px);
     width: 100%;
@@ -389,8 +392,6 @@ h3.speaker-card div {
     margin-top: 0;
     height: 120vh;
     gap: 0;
-
-    /* overflow: hidden; */
   }
 
   .card-container {
@@ -431,6 +432,7 @@ h3.speaker-card div {
   }
 
   .register {
+    display: block;
     margin-top: 40%;
     font-size: 1em;
     font-family: "Nanum Gothic", sans-serif;
@@ -449,7 +451,6 @@ h3.speaker-card div {
   }
 
   .speaker-container {
-    overflow: auto;
     height: auto;
   }
 
@@ -457,7 +458,7 @@ h3.speaker-card div {
     width: 100%;
     height: auto;
     margin-bottom: 1.5em;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .speaker-card img {
