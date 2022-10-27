@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -19,9 +20,18 @@
   vertical-align: middle;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  color: #272a31;
+  text-decoration: none;
+}
+
 .top_menu ul {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   float: right;
   margin-right: 4%;
@@ -29,8 +39,14 @@
 
 .top_menu ul li {
   display: inline-block;
-  margin: 0px 20px 0px 0px;
-  padding: 0px;
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+.show_all_program a {
+  font-size: 1.125em;
+  text-decoration: none;
+  color: #fff;
 }
 
 .top_menu ul li a {
@@ -40,15 +56,6 @@
 
 .header {
   background-color: #d3d3d3;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  color: #272a31;
-  text-decoration: none;
 }
 
 .navbar {
@@ -100,7 +107,6 @@ a {
   background-size: cover;
   background-color: rgb(226, 222, 222);
   display: flex;
-  justify-content: space-between;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -165,7 +171,7 @@ a {
   width: 53px;
   height: 16px;
   border-bottom: 1px solid rgb(239, 81, 60);
-  margin: 0px auto 55px;
+  margin: 0 auto 55px;
 }
 
 .card-container {
@@ -208,12 +214,6 @@ a {
   margin-top: 35%;
   margin-right: 7%;
   font-size: 1.125em;
-  color: #fff;
-}
-
-.show_all_program a {
-  font-size: 1.125em;
-  text-decoration: none;
   color: #fff;
 }
 
@@ -272,12 +272,11 @@ h3.speaker-card div {
   margin-top: 5%;
 }
 
-.partners-container{
+.partners-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  
 }
 
 .logo-pt {
@@ -294,6 +293,7 @@ h3.speaker-card div {
   text-align: center;
   margin-top: 5%;
 }
+
 /* --------------- media query--------------------------- */
 
 @media (max-width: 768px) {
@@ -336,6 +336,7 @@ h3.speaker-card div {
     font-size: xx-large;
     font-weight: 400;
     flex-direction: column;
+
     /* background: #fff; */
     justify-content: flex-start;
     backdrop-filter: blur(10px);
@@ -355,17 +356,18 @@ h3.speaker-card div {
   .topText,
   .title {
     font-size: x-large;
-    letter-spacing: 0rem;
+    letter-spacing: 0;
   }
 
   .date {
-    letter-spacing: 0rem;
+    letter-spacing: 0;
     font-size: large;
   }
 
   .program {
     margin-top: 0;
     height: 100vh;
+
     /* overflow: hidden; */
   }
 
@@ -376,7 +378,7 @@ h3.speaker-card div {
     justify-content: center;
     gap: 24px;
     height: calc(20% - 3px);
-    margin: 0px 0px 0.5em;
+    margin: 0 0 0.5em;
     vertical-align: middle;
   }
 
@@ -416,7 +418,7 @@ h3.speaker-card div {
     width: 40vw;
   }
 
-  .partners{
+  .partners {
     margin-top: 25%;
   }
 
