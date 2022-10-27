@@ -6,6 +6,8 @@
 - Javascript
 ## Live Demo 
 [Live Demo Link](https://www.loom.com/share/b20aec5d094f453d837772b4b836aff3)
+## Video Explainer:
+https://www.loom.com/share/b20aec5d094f453d837772b4b836aff3
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 ### Prerequisites
@@ -33,6 +35,7 @@ Contributions, issues, and feature requests are welcome!
 ## Show your support
 Give a ⭐️ if you like this project!
 ## Acknowledgments
+- Original design idea by Cindy Shin in Behance.
 - Microverse community
 
     Hat tip to Microverse's code reviewers and to everyone who reviewed my project and made suggestions.
