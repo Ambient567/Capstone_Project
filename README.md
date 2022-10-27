@@ -5,7 +5,7 @@
 - HTML
 - Javascript
 ## Live Demo (if available)
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://ambient567.github.io/Capstone_Project/)
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 ### Prerequisites
@@ -18,9 +18,10 @@ To get a local copy up and running follow these simple example steps.
 - run cd Portfolio-setup-and-mobile-first
 - open index.html
 ### Usage
-- It can be used as a Hackthon website.
+- It can be used as a Hackthon event website.
 
 ## Deployment
+-[Deployed with github pages](https://ambient567.github.io/Capstone_Project/)
 
 ## Authors
 👤 **PreciousNhlapho**

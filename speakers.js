@@ -31,19 +31,19 @@ const Speakers = [{
 },
 ];
 
-const card = document.querySelector('.speaker-container');
+const object = document.querySelector('.speaker-container');
 
-Speakers.forEach((cards) => {
+Speakers.forEach((objects) => {
   const div = document.createElement('div');
   div.innerHTML += `
     <div class="speaker-card">
-    <img src="${cards.image}">
+    <img src="${objects.image}">
     <div>
-        <h3>${cards.name}</h3>
-        <h5>${cards.role}</h5>
-        <p>${cards.info}</p>
+        <h3>${objects.name}</h3>
+        <h5>${objects.role}</h5>
+        <p>${objects.info}</p>
     </div>
     </div>
     `;
-  card.append(div);
+  object.append(div);
 });

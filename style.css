@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 .topmenu_wrap {
@@ -42,7 +43,6 @@ a {
   margin: 0 20px 0 0;
   padding: 0;
 }
-
 .show_all_program a {
   font-size: 1.125em;
   text-decoration: none;
@@ -82,6 +82,17 @@ a {
   transition: 0.7s ease;
 }
 
+.live.nav-link {
+  font-size: 1.125em;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #ef513c;
+  padding: 0 15px;
+  color: #fff;
+  border: 0;
+  display: inline-block;
+}
+
 .nav-link:hover {
   color: #ec5242;
 }
@@ -102,7 +113,7 @@ a {
 }
 
 .about {
-  background-image: url("/pictures/globe.jpg");
+  background-image: url("./pictures/globe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgb(226, 222, 222);
@@ -155,11 +166,13 @@ a {
 }
 
 .program {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   padding-top: 79px;
   color: rgb(255, 255, 255);
-  background-image: url("/pictures/pattern.png");
+  background-image: url("./pictures/pattern.png");
   height: 110vh;
   background-color: black;
   margin-top: -9%;
@@ -287,13 +300,21 @@ h3.speaker-card div {
 }
 
 .footer {
+  background-color: rgb(62, 62, 62);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   justify-content: center;
-  align-items: center;
   text-align: center;
-  margin-top: 5%;
+  /* margin-top: 5%; */
+  height: 200px;
+  color: white;
+  font-size: 1.5em;
 }
-
+.register {
+  display: none;
+}
 /* --------------- media query--------------------------- */
 
 @media (max-width: 768px) {
@@ -366,9 +387,14 @@ h3.speaker-card div {
 
   .program {
     margin-top: 0;
-    height: 100vh;
+    height: 120vh;
+    gap: 0;
 
     /* overflow: hidden; */
+  }
+
+  .card-container {
+    height: auto;
   }
 
   .card {
@@ -383,24 +409,37 @@ h3.speaker-card div {
   }
 
   .icon img {
+    flex: 1;
     width: 40px;
     vertical-align: middle;
   }
 
   .card-title {
+    flex: 1;
     font-size: 0.8em;
     vertical-align: middle;
   }
 
   .card-text {
+    flex: 2;
     font-size: 0.8em;
     text-align: left;
   }
 
   .show_all_program {
+    display: none;
+  }
+
+  .register {
     margin-top: 40%;
     font-size: 1em;
     font-family: "Nanum Gothic", sans-serif;
+    border: none;
+    background-color: #ec5242;
+    color: white;
+    padding: 0.5em;
+    width: 250px;
+    cursor: pointer;
   }
 
   .web {
@@ -409,13 +448,26 @@ h3.speaker-card div {
     font-family: "Nanum Gothic", sans-serif;
   }
 
+  .speaker-container {
+    overflow: auto;
+    height: auto;
+  }
+
   .speaker-card {
-    width: 95vw;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5em;
+    margin-left: 0px;
   }
 
   .speaker-card img {
-    height: 25vh;
-    width: 40vw;
+    height: 20vh;
+    width: 50vw;
+  }
+
+  .partners-container {
+    width: 90vw;
+    flex-direction: column;
   }
 
   .partners {
@@ -424,6 +476,10 @@ h3.speaker-card div {
 
   .logo-pt {
     height: 15vh;
-    width: 50vw;
+    width: 40vw;
+  }
+
+  .footer {
+    font-size: 1em;
   }
 }
