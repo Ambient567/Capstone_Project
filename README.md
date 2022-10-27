@@ -21,7 +21,7 @@ To get a local copy up and running follow these simple example steps.
 - It can be used as a Hackthon event website.
 
 ## Deployment
--[Deployed with github pages](https://ambient567.github.io/Capstone_Project/)
+[Deployed with github pages](https://ambient567.github.io/Capstone_Project/)
 
 ## Authors
 👤 **PreciousNhlapho**
