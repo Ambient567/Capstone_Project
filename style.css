@@ -110,7 +110,8 @@ a {
   background-color: #272a31;
 }
 
-.about {
+.about,
+.about-section {
   background-image: url("./pictures/globe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -120,6 +121,11 @@ a {
   justify-content: center;
   width: 100%;
   height: 150vh;
+}
+
+.about-section {
+  height: 100vh;
+  flex-direction: column;
 }
 
 .container {
@@ -145,11 +151,35 @@ a {
   letter-spacing: 1rem;
 }
 
+.about-title {
+  margin-top: -8%;
+  padding-left: 0;
+  text-align: center;
+}
+
 .description {
   border: 3px solid white;
   width: 50%;
   padding: 10px;
   margin: 10px;
+}
+
+.about-desc {
+  margin-top: 5%;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  width: 60%;
+  line-height: 20px;
+}
+
+.our-email {
+  margin-top: 5%;
+}
+
+.email {
+  margin-top: 1%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .date {
@@ -184,6 +214,17 @@ a {
   height: 16px;
   border-bottom: 1px solid rgb(239, 81, 60);
   margin: 15px auto 55px;
+}
+
+.about-logo {
+  width: 50%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hr-line {
+  border-bottom: 1px solid #d3d3d3;
 }
 
 .card-container {
@@ -277,6 +318,40 @@ h3.speaker-card div {
   text-align: center;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #272a31;
+}
+
+.about-sp {
+  margin-top: 5%;
+  font-size: 1.875em;
+}
+
+.about-text {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: -2%;
+}
+
+.winners-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10% 0;
+  gap: 10px;
+}
+
+.winners-image {
+  width: 40vw;
+  height: 80vh;
+}
+
 .partners {
   width: 100%;
   margin-right: 20%;
@@ -316,6 +391,11 @@ h3.speaker-card div {
   display: none;
 }
 
+.abt-footer {
+  color: #fff;
+  background-color: #272a31;
+}
+
 /* --------------- media query--------------------------- */
 
 @media (max-width: 768px) {
@@ -327,7 +407,8 @@ h3.speaker-card div {
     display: none;
   }
 
-  .about {
+  .about,
+  .about-section {
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -384,12 +465,39 @@ h3.speaker-card div {
     letter-spacing: 0;
   }
 
+  .about-desc {
+    width: 80%;
+  }
+
+  .our-email {
+    text-align: center;
+    padding: 5%;
+  }
+
   .date {
     letter-spacing: 0;
     font-size: large;
   }
 
-  .program {
+  .about-text {
+    font-size: 0.975em;
+  }
+
+  .content {
+    margin: 5%;
+  }
+
+  .hr-line {
+    margin: 0;
+  }
+
+  .about-sp {
+    margin-top: 10%;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+
+  .top .program {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -486,6 +594,15 @@ h3.speaker-card div {
   .logo-pt {
     height: 15vh;
     width: 40vw;
+  }
+
+  .winners-images {
+    flex-direction: column;
+  }
+
+  .winners-images img {
+    width: 90%;
+    height: 30vh;
   }
 
   .footer {
