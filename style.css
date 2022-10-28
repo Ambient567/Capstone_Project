@@ -1,0 +1,611 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.topmenu_wrap {
+  background-color: rgb(62, 62, 62);
+  width: 100%;
+}
+
+.top_menu {
+  height: 36px;
+  background-color: rgb(62, 62, 62);
+  text-align: right;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #272a31;
+  text-decoration: none;
+}
+
+.top_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+  margin-right: 4%;
+}
+
+.top_menu ul li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+.show_all_program a {
+  font-size: 1.125em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.top_menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  background-color: #d3d3d3;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  box-shadow: #272a31;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.live.nav-link {
+  font-size: 1.125em;
+  vertical-align: middle;
+  text-align: center;
+  border: 2px solid #ef513c;
+  padding: 5px 15px;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  color: #ec5242;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #272a31;
+}
+
+.about,
+.about-section {
+  background-image: url("./pictures/globe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(226, 222, 222);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150vh;
+}
+
+.about-section {
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  padding: 5%;
+  margin-top: -8%;
+}
+
+.topText,
+.title {
+  color: #ec5242;
+  font-size: 1.5rem;
+  padding-left: 10px;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  line-height: 52px;
+}
+
+.title {
+  font-size: 2.5rem;
+  padding: 10px;
+  font-weight: 900;
+  letter-spacing: 1rem;
+}
+
+.about-title {
+  margin-top: -8%;
+  padding-left: 0;
+  text-align: center;
+}
+
+.description {
+  border: 3px solid white;
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.about-desc {
+  margin-top: 5%;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  width: 60%;
+  line-height: 20px;
+}
+
+.our-email {
+  margin-top: 5%;
+}
+
+.email {
+  margin-top: 1%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.date {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 10px;
+  letter-spacing: 0.1rem;
+}
+
+.venue {
+  padding: 10px;
+}
+
+.program {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 79px;
+  padding-left: 80px;
+  padding-right: 80px;
+  color: rgb(255, 255, 255);
+  background-image: url("./pictures/pattern.png");
+  height: 110vh;
+  background-color: black;
+  margin-top: -9%;
+  gap: 0;
+  width: 100%;
+}
+
+.line {
+  width: 53px;
+  height: 16px;
+  border-bottom: 1px solid rgb(239, 81, 60);
+  margin: 15px auto 55px;
+}
+
+.about-logo {
+  width: 50%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hr-line {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.card-container {
+  margin: 5%;
+  height: inherit;
+}
+
+.card {
+  margin: 0 0 0 3px;
+  padding: 0;
+  border: 0;
+  float: left;
+  width: calc(20% - 3px);
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.icon img {
+  width: 60px;
+}
+
+.card-title {
+  margin-top: 20px;
+  color: rgb(239, 81, 60);
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.card-text {
+  margin-top: 20px;
+  font-size: 1em;
+  word-break: keep-all;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.show_all_program {
+  display: block;
+  clear: left;
+  text-align: right;
+  margin-top: 35%;
+  font-size: 1.125em;
+  color: #fff;
+}
+
+.speaker-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0 5%;
+  padding-right: 0 5%;
+  align-items: center;
+}
+
+.speaker-card {
+  gap: 5%;
+  width: 48vw;
+  overflow-wrap: break-word;
+  margin: 2% 2% 2% 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+.speaker-card img {
+  height: 25vh;
+  width: 16vw;
+  padding: 2% 2% 2% 2%;
+}
+
+h3.speaker-card div {
+  font-size: 24px;
+  display: flow-root;
+  margin: 10px;
+  align-self: center;
+}
+
+.speaker-card div h5 {
+  color: rgb(250, 46, 46);
+  font-size: 14px;
+  margin: 10px 10px;
+}
+
+.speaker-card div p {
+  font-size: 16px;
+  margin: 10px 10px;
+}
+
+.top-speakers {
+  margin-top: 3%;
+  width: 100%;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #272a31;
+}
+
+.about-sp {
+  margin-top: 5%;
+  font-size: 1.875em;
+}
+
+.about-text {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: -2%;
+}
+
+.winners-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10% 0;
+  gap: 10px;
+}
+
+.winners-image {
+  width: 40vw;
+  height: 80vh;
+}
+
+.partners {
+  width: 100%;
+  margin-right: 20%;
+  padding: 20px 20px;
+  background-color: rgb(62, 62, 62);
+  margin-top: 5%;
+  color: #fff;
+}
+
+.partners-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-pt {
+  margin: 1.5em;
+  height: 15vh;
+  width: 13vw;
+  padding: 2% 2% 2% 2%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  font-size: 1.5em;
+}
+
+.register {
+  display: none;
+}
+
+.abt-footer {
+  color: #fff;
+  background-color: #272a31;
+}
+
+/* --------------- media query--------------------------- */
+
+@media (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .topmenu_wrap {
+    display: none;
+  }
+
+  .about,
+  .about-section {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  .navbar {
+    padding: 25px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    height: 100vh;
+    left: -100%;
+    top: 70px;
+    gap: 1;
+    font-size: xx-large;
+    font-weight: 400;
+    flex-direction: column;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .topText,
+  .title {
+    font-size: x-large;
+    letter-spacing: 0;
+  }
+
+  .about-desc {
+    width: 80%;
+  }
+
+  .our-email {
+    text-align: center;
+    padding: 5%;
+  }
+
+  .date {
+    letter-spacing: 0;
+    font-size: large;
+  }
+
+  .about-text {
+    font-size: 0.975em;
+  }
+
+  .content {
+    margin: 5%;
+  }
+
+  .hr-line {
+    margin: 0;
+  }
+
+  .about-sp {
+    margin-top: 10%;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+
+  .top .program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    height: 100vh;
+    gap: 0;
+  }
+
+  .card {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    height: calc(12% - 3px);
+    margin: 0 0 0.5em;
+    vertical-align: middle;
+  }
+
+  .icon img {
+    flex: 1;
+    width: 40px;
+    vertical-align: middle;
+  }
+
+  .card-title {
+    flex: 1;
+    font-size: 0.8em;
+    vertical-align: middle;
+  }
+
+  .card-text {
+    flex: 2;
+    font-size: 0.8em;
+    text-align: left;
+  }
+
+  .show_all_program {
+    display: none;
+  }
+
+  .register {
+    display: block;
+    clear: left;
+    margin-top: 10%;
+    font-size: 1em;
+    font-family: "Nanum Gothic", sans-serif;
+    border: none;
+    background-color: #ec5242;
+    color: white;
+    padding: 0.5em;
+    height: 50px;
+    width: 300px;
+    cursor: pointer;
+  }
+
+  .web {
+    margin-top: 40%;
+    font-size: 1em;
+    font-family: "Nanum Gothic", sans-serif;
+  }
+
+  .speakers {
+    margin-top: 10%;
+  }
+
+  .speaker-container {
+    height: auto;
+  }
+
+  .speaker-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5em;
+    margin-left: 0;
+  }
+
+  .speaker-card img {
+    height: 20vh;
+    width: 50vw;
+  }
+
+  .partners-container {
+    width: 90vw;
+    overflow-wrap: break-word;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .partners {
+    margin-top: 25%;
+  }
+
+  .logo-pt {
+    height: 15vh;
+    width: 40vw;
+  }
+
+  .winners-images {
+    flex-direction: column;
+  }
+
+  .winners-images img {
+    width: 90%;
+    height: 30vh;
+  }
+
+  .footer {
+    font-size: 1em;
+  }
+}
