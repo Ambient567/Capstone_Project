@@ -5,7 +5,7 @@
 - HTML
 - Javascript
 ## Live Demo 
-[Live Demo Link](https://www.loom.com/share/b20aec5d094f453d837772b4b836aff3)
+[Live Demo Link](https://ambient567.github.io/Capstone_Project/)
 ## Video Explainer:
 https://www.loom.com/share/b20aec5d094f453d837772b4b836aff3
 ## Getting Started
